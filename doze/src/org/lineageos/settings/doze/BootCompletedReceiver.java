@@ -1,6 +1,10 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+<<<<<<< HEAD:doze/src/org/mokee/settings/doze/BootCompletedReceiver.java
  *               2017 The LineageOS Project
+=======
+ *               2017-2019 The LineageOS Project
+>>>>>>> d2dbb86... sirius: doze: Check if AOD is enabled after boot:parts/src/org/lineageos/settings/BootCompletedReceiver.java
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,10 +33,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        if (Utils.isDozeEnabled(context) && Utils.sensorsEnabled(context)) {
-            if (DEBUG) Log.d(TAG, "Starting service");
-            Utils.startService(context);
-        }
+        if (DEBUG) Log.d(TAG, "Received boot completed intent");
+        Utils.checkDozeService(context);
     }
-
 }
