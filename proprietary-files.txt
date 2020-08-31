@@ -805,8 +805,6 @@ vendor/lib/libcacertclient.so
 vendor/lib/libdataitems.so
 vendor/lib/libgarden.so
 vendor/lib/libgdtap.so
-vendor/lib/libgnsspps.so
-vendor/lib/libgps.utils.so
 vendor/lib/libizat_client_api.so
 vendor/lib/libizat_core.so
 -vendor/lib/liblbs_core.so
