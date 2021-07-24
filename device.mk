@@ -334,12 +334,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp.conf
 
-# Overlays
-PRODUCT_PACKAGES += \
-    OPPOBluetooth \
-    OPPOFrameworks \
-    OPPOSystemUI
-
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
@@ -348,10 +342,6 @@ PRODUCT_PACKAGES += \
 # Partition
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-# Parts
-PRODUCT_PACKAGES += \
-    OPPOParts
 
 # Power
 PRODUCT_PACKAGES += \
