@@ -354,6 +354,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Pocket mode
+PRODUCT_PACKAGES += \
+    OPPOPocketMode
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
@@ -460,8 +464,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
-    libwifi-hal-qcom \
     libwpa_client \
+    libwifi-hal-ctrl \
+    libwifi-hal-qcom \
+    vendor.qti.hardware.wifi.hostapd@1.2.vendor \
+    vendor.qti.hardware.wifi.supplicant@2.2.vendor \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
